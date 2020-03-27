@@ -185,6 +185,10 @@
 ; подсвечивать текущий элемент
 (setq web-mode-enable-current-element-highlight t)
 
+(eval-after-load "web-mode"
+  '(set-face-background 'web-mode-current-element-highlight-face "PowderBlue"))
+
+
 
 ;;; JS
 (require 'json-mode)
@@ -199,3 +203,19 @@
 (require 'powershell-mode)
 (add-to-list 'auto-mode-alist '("\\.ps1\\'" . powershell-mode))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#000000" "#990000" "#339900" "#666633" "#0000C8" "#9933FF" "#666633" "#000000"])
+ '(custom-safe-themes
+   (quote
+	("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" "c0dd134ecd6ede6508c30f7d4ac92334229531df62284fc6572f65b4d0cde43f" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
